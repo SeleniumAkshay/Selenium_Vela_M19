@@ -57,11 +57,11 @@ public class BaseTest {
 	public void beforeClass() throws IOException {
 		System.out.println("@BeforeClass  Launch Browser");
 
-		String browser = fileUtility.readDataFromPropertyFile("browserName");
-		String url = fileUtility.readDataFromPropertyFile("url");
+//		String browser = fileUtility.readDataFromPropertyFile("browserName");
+//		String url = fileUtility.readDataFromPropertyFile("url");
 
-//		String browser = System.getProperty("browserName");
-//		String url = System.getProperty("baseUrl");
+		String browser = System.getProperty("browserName");
+		String url = System.getProperty("baseUrl");
 
 		if (browser.equals("chrome")) {
 			System.out.println("Chrome Launched");
