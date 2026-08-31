@@ -13,7 +13,7 @@ public class TC_001_Verify_User_Is_Able_To_Add_Address_Or_Not_Test extends BaseT
 
 	@Test
 	public void addAddress() throws EncryptedDocumentException, IOException, InterruptedException {
-
+		System.out.println("Add Address");
 		webDriverUtility.javaScriptScrollTillElement(driver, homePage.getAddressesBtn());
 		homePage.getAddressesBtn().click();
 

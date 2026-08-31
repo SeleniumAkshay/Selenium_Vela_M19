@@ -11,7 +11,7 @@ public class TC_002_Verify_User_Is_Able_To_Delete_Address_Or_Not_Test extends Ba
 
 	@Test
 	public void deleteAddress() throws InterruptedException, IOException {
-
+		System.out.println("Delete Address");
 		webDriverUtility.javaScriptScrollTillElement(driver, homePage.getAddressesBtn());
 		homePage.getAddressesBtn().click();
 
